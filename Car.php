@@ -22,22 +22,23 @@
             $this->energy = $energy;
         }
 
-
-        //start
-        public function start()
-        {
-            if ($hasParkBrake == true){
-                throw new exception('frein à main serrer');
-            }
-        }
-
-        public function getParkBrake($hasParkBrake): bool
+         public function getParkBrake(): bool
         {
             $this->hasParkBrake;
         }
-        public function setParkBake(): void 
+        public function setParkBrake(bool $hasParkBrake): void 
         {
-            $this->hasParkBake = $hasParkBrake;
+            $this->hasParkBrake = $hasParkBrake;
+        }
+        
+        //start
+
+        public function start()
+        {
+            if (setParkBrake == true){
+                throw new exception('frein à main serrer');
+            }
+           
         }
 
         //forward

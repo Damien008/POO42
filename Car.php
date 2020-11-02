@@ -11,7 +11,7 @@
         private $numberSeats;
         private $energy;
         private $energyLevel;
-        private $hasParkBreak;
+        private $hasParkBrake;
 
         //méthodes
 
@@ -26,17 +26,18 @@
         //start
         public function start()
         {
-            if ($hasParkBreak = false){
+            if ($hasParkBrake == true){
                 throw new exception('frein à main serrer');
             }
-    
-            try {
-    
-            } catch(Exception $e){
-                echo "Exception received : ". $e->getMessage();
-            }finally{
-                echo "Ma voiture roule comme un donut";
-            }
+        }
+
+        public function getParkBrake($hasParkBrake): bool
+        {
+            $this->hasParkBrake;
+        }
+        public function setParkBake(): void 
+        {
+            $this->hasParkBake = $hasParkBrake;
         }
 
         //forward
@@ -113,15 +114,9 @@
             $this->energyLevel = $energyLevel;
         }
 
-        public function getHasParkBreak(): bool
-        {
-            return $this->ghasParkBreak;
-        }
+      
 
-        public function setHasParkBreak(bool $hasParkBreak): void 
-        {
-            $this->hasParkBreak = $hasParkBreak;
-        }
+       
 
 
 
